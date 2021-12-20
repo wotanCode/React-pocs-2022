@@ -2,7 +2,7 @@
 import "./ExpenseItem.css";
 //Components
 import ExpenseData from "./ExpenseData"
-import Card from "./Card"
+import Card from "../UI/Card"
 
 function ExpenseItem(props){
 
