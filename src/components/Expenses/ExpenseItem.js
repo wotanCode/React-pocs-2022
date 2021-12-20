@@ -4,7 +4,7 @@ import "./ExpenseItem.css";
 import ExpenseData from "./ExpenseData"
 import Card from "../UI/Card"
 
-function ExpenseItem(props){
+const ExpenseItem = (props) =>{
 
 
     return (
