@@ -30,10 +30,15 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = expense => {
+    console.log('in app.js');
+    console.log(expense)
+  }
+
   return (
     <div className="App">
       <h1>react</h1>
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses items={expenses} />
     </div>
   );
