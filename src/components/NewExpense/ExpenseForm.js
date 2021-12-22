@@ -20,7 +20,6 @@ const ExpenseForm = (props) => {
     };
 
     const submitHandler = (event) =>{
-        debugger;
         event.preventDefault();
         const expenseData = {
             title: enteredTitle,
