@@ -20,9 +20,10 @@ const ExpenseForm = (props) => {
     };
 
     const submitHandler = (event) =>{
+        debugger;
         event.preventDefault();
         const expenseData = {
-            tittle: enteredTitle,
+            title: enteredTitle,
             amount: enteredAmount,
             date: new Date(enteredDate)
         };
