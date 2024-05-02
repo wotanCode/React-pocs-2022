@@ -1,0 +1,68 @@
+*, *::Before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364) ;
+}
+/*Font https://www.dafont.com/es/calculator.font*/
+@font-face {
+  font-family: Calculator;
+  src: url(font/Calculator.ttf);
+}
+.App{
+  height: 100vh;
+  width: 100%;
+  font-family: Calculator;
+}
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+}
+
+.calculator-grid button {
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  border: 1px solid white;
+  outline: none;
+  background-color: #fafafa75;
+  margin: 3px;
+  font-family: Calculator;
+}
+
+.calculator-grid button:hover {
+  background-color: #fafafa;
+}
+
+.span-two{
+  grid-column: span 2;
+}
+
+.output{
+  grid-column: 1/-1;
+  margin-bottom: .5rem;
+  background-color: #d0e6a8;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all
+}
+.output .previous-operand{
+  color: #00000090;
+  font-size: 1.5rem;
+}
+
+.output .current-operand{
+  color: #292827;
+  font-size: 2.5rem;
+}
