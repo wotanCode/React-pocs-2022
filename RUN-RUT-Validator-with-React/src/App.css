@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  color: white;
+  
+}
+.App-header {
+  font-size: calc(10px + 2vmin);
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App-link {
+  color: #61dafb;
+}
+.App-main{
+  font-size: calc(10px + 1vmin);
+  display: flex;
+  flex-direction: column;
+}
+.inputs{
+  font-size: calc(8px + 1vmin);
+  height: 50px;
+  padding-left: 1vmin;
+}
+.checks{
+  width: 100px;
+  height: 40px;
+}
+.legenda{
+  color: #9e9e9e;
+}
